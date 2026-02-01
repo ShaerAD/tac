@@ -30,69 +30,101 @@
     "images": [],
     "content": "<h4>一、CSS基礎語法</h4><p>CSS規則由選擇器和宣告塊組成。</p><pre><code class=\"language-css\">/* 段落樣式 */
 p {
-    font-family: 'Arial', sans-serif;  /* 字體堆疊：優先使用 Arial */
-    color: #333;                       /* 文字顏色：深灰色 */
-    font-size: 16px;                   /* 字體大小：16像素 */
+    /* 字體堆疊：優先使用 Arial */
+    font-family: 'Arial', sans-serif;
+    /* 文字顏色：深灰色 */
+    color: #333;
+    /* 字體大小：16像素 */
+    font-size: 16px;
 }
 
 /* 按鈕類選擇器 */
 .button {
-    background-color: #4a6cf7;         /* 背景顏色：藍色 */
-    color: white;                      /* 文字顏色：白色 */
-    padding: 10px 20px;                /* 內邊距：上下10px，左右20px */
-    border-radius: 5px;                /* 圓角半徑：5像素 */
+    /* 背景顏色：藍色 */
+    background-color: #4a6cf7;
+    /* 文字顏色：白色 */
+    color: white;
+    /* 內邊距：上下10px，左右20px */
+    padding: 10px 20px;
+    /* 圓角半徑：5像素 */
+    border-radius: 5px;
 }
 
 /* 滑鼠懸停偽類 */
 .button:hover {
-    background-color: #3a5cd7;         /* 懸停時背景變深藍色 */
+    /* 懸停時背景變深藍色 */
+    background-color: #3a5cd7;
 }</code></pre><h4>二、常用屬性</h4><pre><code class=\"language-css\">/* 文字樣式類 */
 .text {
-    font-size: 1rem;                   /* 字體大小：1相對單位 */
-    line-height: 1.5;                  /* 行高：1.5倍字體大小 */
-    text-align: center;                /* 文字對齊：居中 */
+    /* 字體大小：1相對單位 */
+    font-size: 1rem;
+    /* 行高：1.5倍字體大小 */
+    line-height: 1.5;
+    /* 文字對齊：居中 */
+    text-align: center;
 }
 
 /* 盒子模型類 */
 .box {
-    width: 100%;                       /* 寬度：100%父容器 */
-    max-width: 1200px;                 /* 最大寬度：1200像素 */
-    margin: 0 auto;                    /* 外邊距：上下0，左右自動（居中） */
-    padding: 20px;                     /* 內邊距：20像素 */
-    border: 1px solid #ddd;            /* 邊框：1像素實線淺灰色 */
+    /* 寬度：100%父容器 */
+    width: 100%;
+    /* 最大寬度：1200像素 */
+    max-width: 1200px;
+    /* 外邊距：上下0，左右自動（居中） */
+    margin: 0 auto;
+    /* 內邊距：20像素 */
+    padding: 20px;
+    /* 邊框：1像素實線淺灰色 */
+    border: 1px solid #ddd;
 }</code></pre><h4>三、實際效果演示</h4><div class=\"demo-area\"><style> .demo-container { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0; } .demo-button { background-color: #4a6cf7; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-family: Arial, sans-serif; font-size: 16px; transition: background-color 0.3s; } .demo-button:hover { background-color: #3a5cd7; } .demo-text { font-size: 1rem; line-height: 1.5; text-align: center; margin: 15px 0; } .demo-box { width: 100%; max-width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; background: white; color: #333; } </style><div class=\"demo-container\"><p class=\"demo-text\">這是一個使用上述CSS樣式的段落</p><button class=\"demo-button\">滑鼠懸停看我變色</button><div class=\"demo-box\">這是一個盒子模型演示，寬度限制在300px，自動居中</div></div></div>",
     "content_en": "<h4>Part 1: CSS Basic Syntax</h4><pre><code class=\"language-css\">/* Paragraph style */
 p {
-    font-family: 'Arial', sans-serif;  /* Font stack: Arial first */
-    color: #333;                       /* Text color: dark gray */
-    font-size: 16px;                   /* Font size: 16 pixels */
+    /* Font stack: Arial first */
+    font-family: 'Arial', sans-serif;
+    /* Text color: dark gray */
+    color: #333;
+    /* Font size: 16 pixels */
+    font-size: 16px;
 }
 
 /* Button class selector */
 .button {
-    background-color: #4a6cf7;         /* Background color: blue */
-    color: white;                      /* Text color: white */
-    padding: 10px 20px;                /* Padding: 10px top/bottom, 20px left/right */
-    border-radius: 5px;                /* Border radius: 5 pixels */
+    /* Background color: blue */
+    background-color: #4a6cf7;
+    /* Text color: white */
+    color: white;
+    /* Padding: 10px top/bottom, 20px left/right */
+    padding: 10px 20px;
+    /* Border radius: 5 pixels */
+    border-radius: 5px;
 }
 
 /* Hover pseudo-class */
 .button:hover {
-    background-color: #3a5cd7;         /* Darker blue on hover */
+    /* Darker blue on hover */
+    background-color: #3a5cd7;
 }</code></pre><h4>Part 2: Common Properties</h4><pre><code class=\"language-css\">/* Text styling class */
 .text {
-    font-size: 1rem;                   /* Font size: 1 relative unit */
-    line-height: 1.5;                  /* Line height: 1.5 times font size */
-    text-align: center;                /* Text alignment: center */
+    /* Font size: 1 relative unit */
+    font-size: 1rem;
+    /* Line height: 1.5 times font size */
+    line-height: 1.5;
+    /* Text alignment: center */
+    text-align: center;
 }
 
 /* Box model class */
 .box {
-    width: 100%;                       /* Width: 100% of parent */
-    max-width: 1200px;                 /* Maximum width: 1200 pixels */
-    margin: 0 auto;                    /* Margin: 0 top/bottom, auto left/right (centers) */
-    padding: 20px;                     /* Padding: 20 pixels */
-    border: 1px solid #ddd;            /* Border: 1px solid light gray */
+    /* Width: 100% of parent */
+    width: 100%;
+    /* Maximum width: 1200 pixels */
+    max-width: 1200px;
+    /* Margin: 0 top/bottom, auto left/right (centers) */
+    margin: 0 auto;
+    /* Padding: 20 pixels */
+    padding: 20px;
+    /* Border: 1px solid light gray */
+    border: 1px solid #ddd;
 }</code></pre><h4>Part 3: Live Demo</h4><div class=\"demo-area\"><style> .demo-container { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0; } .demo-button { background-color: #4a6cf7; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-family: Arial, sans-serif; font-size: 16px; transition: background-color 0.3s; } .demo-button:hover { background-color: #3a5cd7; } .demo-text { font-size: 1rem; line-height: 1.5; text-align: center; margin: 15px 0; } .demo-box { width: 100%; max-width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; background: white; color: #333; } </style><div class=\"demo-container\"><p class=\"demo-text\">This paragraph uses the CSS styles shown above</p><button class=\"demo-button\">Hover over me to see color change</button><div class=\"demo-box\">This is a box model demo with max-width 300px and auto centering</div></div></div>"
   },
   {
@@ -102,24 +134,24 @@ p {
     "category": "程式教學 | Tutorial",
     "images": [],
     "content": "<h4>一、JavaScript 基本語法</h4><p>JavaScript 是一種動態類型的腳本語言。</p><pre><code class=\"language-javascript\">// 變數宣告
-let name = '小明';          // 可重新賦值
-const PI = 3.14159;        // 常數，不可重新賦值
+let name = '小明'; // 可重新賦值
+const PI = 3.14159; // 常數，不可重新賦值
 var oldVariable = '舊式宣告'; // 舊式宣告（不推薦）
 
 // 資料類型
-let number = 42;           // 數字
-let text = 'Hello';        // 字串
-let isTrue = true;         // 布林值
-let array = [1, 2, 3];     // 陣列
-let object = {             // 物件
-  name: '小明',            // 屬性：姓名
-  age: 25                  // 屬性：年齡
+let number = 42; // 數字
+let text = 'Hello'; // 字串
+let isTrue = true; // 布林值
+let array = [1, 2, 3]; // 陣列
+let object = { // 物件
+  name: '小明', // 屬性：姓名
+  age: 25 // 屬性：年齡
 };
-let nothing = null;        // 空值
-let notDefined;           // undefined（未定義）
+let nothing = null; // 空值
+let notDefined; // undefined（未定義）
 
 // 函數定義
-function greet(name) {     // 傳統函數定義
+function greet(name) { // 傳統函數定義
   return `你好，${name}！`; // 返回問候語
 }
 
@@ -127,65 +159,65 @@ function greet(name) {     // 傳統函數定義
 const add = (a, b) => a + b; // 簡潔的函數表達式
 
 // 條件判斷
-if (age >= 18) {           // 如果年齡大於等於18歲
-  console.log('成年人');    // 輸出：成年人
-} else {                   // 否則
-  console.log('未成年人');  // 輸出：未成年人
+if (age >= 18) { // 如果年齡大於等於18歲
+  console.log('成年人'); // 輸出：成年人
+} else { // 否則
+  console.log('未成年人'); // 輸出：未成年人
 }
 
 // for 迴圈
 for (let i = 0; i < 5; i++) { // 從0到4的迴圈
-  console.log(i);            // 輸出當前數字
+  console.log(i); // 輸出當前數字
 }
 
 // 陣列遍歷
 let fruits = ['蘋果', '香蕉', '橙子']; // 定義水果陣列
-fruits.forEach(fruit => {    // 對每個水果執行
-  console.log(fruit);        // 輸出水果名稱
+fruits.forEach(fruit => { // 對每個水果執行
+  console.log(fruit); // 輸出水果名稱
 });</code></pre><h4>二、DOM 操作</h4><pre><code class=\"language-javascript\">// 選取DOM元素
-const button = document.getElementById('myButton');    // 透過ID選取按鈕
-const items = document.querySelectorAll('.item');      // 選取所有類別為item的元素
+const button = document.getElementById('myButton'); // 透過ID選取按鈕
+const items = document.querySelectorAll('.item'); // 選取所有類別為item的元素
 const container = document.querySelector('.container'); // 選取第一個類別為container的元素
 
 // 修改元素內容
-button.textContent = '點擊我';          // 修改按鈕文字
+button.textContent = '點擊我'; // 修改按鈕文字
 container.innerHTML = '<p>新內容</p>'; // 修改容器內部HTML
 
 // 添加事件監聽器
 button.addEventListener('click', function() { // 監聽點擊事件
-  alert('按鈕被點擊了！');                  // 彈出警告框
+  alert('按鈕被點擊了！'); // 彈出警告框
 });
 
 // 修改元素樣式
-button.style.backgroundColor = 'blue';   // 修改背景顏色為藍色
-button.style.color = 'white';           // 修改文字顏色為白色
-button.classList.add('active');         // 添加CSS類別：active
-button.classList.remove('inactive');    // 移除CSS類別：inactive
+button.style.backgroundColor = 'blue'; // 修改背景顏色為藍色
+button.style.color = 'white'; // 修改文字顏色為白色
+button.classList.add('active'); // 添加CSS類別：active
+button.classList.remove('inactive'); // 移除CSS類別：inactive
 
 // 創建新元素
-const newDiv = document.createElement('div');  // 創建div元素
-newDiv.textContent = '這是一個新元素';         // 設定新元素的文字內容
-document.body.appendChild(newDiv);             // 將新元素添加到body中
+const newDiv = document.createElement('div'); // 創建div元素
+newDiv.textContent = '這是一個新元素'; // 設定新元素的文字內容
+document.body.appendChild(newDiv); // 將新元素添加到body中
 </code></pre><h4>三、互動演示</h4><div id=\"js-demo-area\"><style> #js-demo-area { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0; } .demo-button-js { background-color: #4a6cf7; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-family: Arial, sans-serif; font-size: 16px; margin: 10px; } .demo-button-js.active { background-color: #3a5cd7; transform: scale(1.05); } .demo-output { background: white; color: #333; padding: 15px; border-radius: 5px; margin: 10px 0; min-height: 50px; border: 1px solid #ddd; } .demo-controls { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; } .demo-element { background: #f0f0f0; padding: 15px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; } </style><div class=\"demo-output\" id=\"js-output\">點擊下方按鈕查看效果</div><div class=\"demo-controls\"><button class=\"demo-button-js\" onclick=\"document.getElementById('js-output').textContent = '你好，世界！';\">修改文字</button><button class=\"demo-button-js\" onclick=\"document.getElementById('js-output').style.backgroundColor = '#4a6cf7';\">修改背景</button><button class=\"demo-button-js\" onclick=\"document.getElementById('js-output').classList.toggle('active')\">切換類別</button><button class=\"demo-button-js\" onclick=\"alert('你點擊了按鈕！')\">彈出提示</button></div><div class=\"demo-element\" id=\"new-element-area\">新元素將出現在這裡</div><button class=\"demo-button-js\" onclick=\"const newDiv = document.createElement('div'); newDiv.className = 'demo-element'; newDiv.textContent = '這是 JavaScript 創建的新元素，時間：' + new Date().toLocaleTimeString(); document.getElementById('new-element-area').appendChild(newDiv);\">創建新元素</button><button class=\"demo-button-js\" onclick=\"document.getElementById('js-output').textContent = '點擊下方按鈕查看效果'; document.getElementById('js-output').style.backgroundColor = 'white'; document.getElementById('js-output').classList.remove('active'); document.getElementById('new-element-area').innerHTML = '新元素將出現在這裡';\">重置演示</button></div>",
     "content_en": "<h4>Part 1: JavaScript Basic Syntax</h4><pre><code class=\"language-javascript\">// Variable declaration
-let name = 'John';          // Can be reassigned
-const PI = 3.14159;         // Constant, cannot be reassigned
+let name = 'John'; // Can be reassigned
+const PI = 3.14159; // Constant, cannot be reassigned
 var oldVariable = 'old way'; // Old way (not recommended)
 
 // Data types
-let number = 42;           // Number
-let text = 'Hello';        // String
-let isTrue = true;         // Boolean
-let array = [1, 2, 3];     // Array
-let object = {             // Object
-  name: 'John',            // Property: name
-  age: 25                  // Property: age
+let number = 42; // Number
+let text = 'Hello'; // String
+let isTrue = true; // Boolean
+let array = [1, 2, 3]; // Array
+let object = { // Object
+  name: 'John', // Property: name
+  age: 25 // Property: age
 };
-let nothing = null;        // Null
-let notDefined;           // Undefined
+let nothing = null; // Null
+let notDefined; // Undefined
 
 // Function definition
-function greet(name) {     // Traditional function definition
+function greet(name) { // Traditional function definition
   return `Hello, ${name}!`; // Return greeting
 }
 
@@ -193,45 +225,45 @@ function greet(name) {     // Traditional function definition
 const add = (a, b) => a + b; // Concise function expression
 
 // Conditional statement
-if (age >= 18) {           // If age is 18 or older
-  console.log('Adult');    // Output: Adult
-} else {                   // Otherwise
-  console.log('Minor');    // Output: Minor
+if (age >= 18) { // If age is 18 or older
+  console.log('Adult'); // Output: Adult
+} else { // Otherwise
+  console.log('Minor'); // Output: Minor
 }
 
 // For loop
 for (let i = 0; i < 5; i++) { // Loop from 0 to 4
-  console.log(i);            // Output current number
+  console.log(i); // Output current number
 }
 
 // Array traversal
 let fruits = ['apple', 'banana', 'orange']; // Define fruits array
-fruits.forEach(fruit => {    // Execute for each fruit
-  console.log(fruit);        // Output fruit name
+fruits.forEach(fruit => { // Execute for each fruit
+  console.log(fruit); // Output fruit name
 });</code></pre><h4>Part 2: DOM Manipulation</h4><pre><code class=\"language-javascript\">// Select DOM elements
-const button = document.getElementById('myButton');    // Select button by ID
-const items = document.querySelectorAll('.item');      // Select all elements with class 'item'
+const button = document.getElementById('myButton'); // Select button by ID
+const items = document.querySelectorAll('.item'); // Select all elements with class 'item'
 const container = document.querySelector('.container'); // Select first element with class 'container'
 
 // Modify element content
-button.textContent = 'Click me';          // Change button text
+button.textContent = 'Click me'; // Change button text
 container.innerHTML = '<p>New content</p>'; // Change container HTML
 
 // Add event listener
 button.addEventListener('click', function() { // Listen for click event
-  alert('Button clicked!');                 // Show alert
+  alert('Button clicked!'); // Show alert
 });
 
 // Modify element styles
-button.style.backgroundColor = 'blue';   // Change background color to blue
-button.style.color = 'white';           // Change text color to white
-button.classList.add('active');         // Add CSS class: active
-button.classList.remove('inactive');    // Remove CSS class: inactive
+button.style.backgroundColor = 'blue'; // Change background color to blue
+button.style.color = 'white'; // Change text color to white
+button.classList.add('active'); // Add CSS class: active
+button.classList.remove('inactive'); // Remove CSS class: inactive
 
 // Create new element
-const newDiv = document.createElement('div');  // Create div element
-newDiv.textContent = 'This is a new element';  // Set text content
-document.body.appendChild(newDiv);             // Append to body
+const newDiv = document.createElement('div'); // Create div element
+newDiv.textContent = 'This is a new element'; // Set text content
+document.body.appendChild(newDiv); // Append to body
 </code></pre><h4>Part 3: Interactive Demo</h4><div id=\"js-demo-area-en\"><style> #js-demo-area-en { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0; } .demo-button-js-en { background-color: #4a6cf7; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; font-family: Arial, sans-serif; font-size: 16px; margin: 10px; } .demo-button-js-en.active { background-color: #3a5cd7; transform: scale(1.05); } .demo-output-en { background: white; color: #333; padding: 15px; border-radius: 5px; margin: 10px 0; min-height: 50px; border: 1px solid #ddd; } .demo-controls-en { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; } .demo-element-en { background: #f0f0f0; padding: 15px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; } </style><div class=\"demo-output-en\" id=\"js-output-en\">Click buttons below to see effects</div><div class=\"demo-controls-en\"><button class=\"demo-button-js-en\" onclick=\"document.getElementById('js-output-en').textContent = 'Hello, World!';\">Change Text</button><button class=\"demo-button-js-en\" onclick=\"document.getElementById('js-output-en').style.backgroundColor = '#4a6cf7';\">Change Background</button><button class=\"demo-button-js-en\" onclick=\"document.getElementById('js-output-en').classList.toggle('active')\">Toggle Class</button><button class=\"demo-button-js-en\" onclick=\"alert('You clicked the button!')\">Show Alert</button></div><div class=\"demo-element-en\" id=\"new-element-area-en\">New elements will appear here</div><button class=\"demo-button-js-en\" onclick=\"const newDiv = document.createElement('div'); newDiv.className = 'demo-element-en'; newDiv.textContent = 'New element created by JavaScript, time: ' + new Date().toLocaleTimeString(); document.getElementById('new-element-area-en').appendChild(newDiv);\">Create New Element</button><button class=\"demo-button-js-en\" onclick=\"document.getElementById('js-output-en').textContent = 'Click buttons below to see effects'; document.getElementById('js-output-en').style.backgroundColor = 'white'; document.getElementById('js-output-en').classList.remove('active'); document.getElementById('new-element-area-en').innerHTML = 'New elements will appear here';\">Reset Demo</button></div>"
   }
 ]
